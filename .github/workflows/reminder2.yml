@@ -35,9 +35,15 @@ jobs:
           {
             "type": "rich",
             "title": "Daily Platoon Activites!",
-            "description": "COMPLETE YOUR PLATOON DAILY PATROL AND THE GUNSMOKE FRONTLINE MISSIONS!",
+            "description": "The most important thing for us as a Platoon is to log in and get the highscores we can durring GSF, so log in and do both that and the platoon Dailys!",
             "color": 2123412,
-            }
+            "thumbnail": {
+              "url": ""
+            },
+            "author": {
+            },
+            "url": ""
+          }
         ]
         }' ${{ secrets.DISCORD_WEBHOOK2 }})
         echo "Webhook server response: $RESPONSE"
