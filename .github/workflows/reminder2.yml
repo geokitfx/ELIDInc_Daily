@@ -45,7 +45,7 @@ jobs:
             "url": ""
           }
         ]
-        }' ${{ secrets.DISCORD_WEBHOOK }})
+        }' ${{ secrets.DISCORD_WEBHOOK2 }})
         echo "Webhook server response: $RESPONSE"
   
   workflow-keepalive:
