@@ -22,8 +22,8 @@ jobs:
         "embeds": [
           {
             "type": "rich",
-            "title": "Daily Login Reminder~",
-            "description": "Hello Commander, Lenna here! I need to remind you to login and do your dailys!",
+            "title": "Za Battle Pass!",
+            "description": "Don't forget to complete the Voyage Logs objectives either!",
             "color": 2123412,
             "thumbnail": {
               "url": "" 
@@ -34,8 +34,8 @@ jobs:
           },
           {
             "type": "rich",
-            "title": "Daily Activity Rewards!",
-            "description": "Your Daily Activity Rewards are very important makesure to always get your score to 80!",
+            "title": "And most importantly!",
+            "description": "COMPLETE YOUR PLATOON DAILY PATROL AND THE GUNSMOKE FRONTLINE MISSIONS!",
             "color": 2123412,
             "thumbnail": {
               "url": ""
