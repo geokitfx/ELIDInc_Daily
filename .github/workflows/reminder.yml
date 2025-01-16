@@ -14,7 +14,7 @@ jobs:
     - name: Send a request to webhook
       run: |
         RESPONSE=$(curl -H "Content-Type: application/json" -X POST -d '{
-        "username": "GitHub",
+        "username": "Lenna",
         "content": "@everyone",
         "embeds": [
           {
