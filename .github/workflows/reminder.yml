@@ -14,16 +14,16 @@ jobs:
     - name: Send to Discord 1
       run: |
         RESPONSE=$(curl -H "Content-Type: application/json" -X POST -d '{
-        "username": "GitHub",
+        "username": "Lenna",
         "content": "@everyone",
         "embeds": [
           {
             "type": "rich",
-            "title": "New Changes",
-            "description": "New changes on DroneGPS repository by ${{ github.actor }}",
+            "title": "Daily Login Reminder~",
+            "description": "Hello Commander, Lenna here! I need to remind you to login and do your dailys!",
             "color": 2123412,
             "thumbnail": {
-              "url": "https://avatars.githubusercontent.com/u/160980408?v=4"
+              "url": "https://iopwiki.com/images/b/bf/Lenna_S.png"
             },
             "author": {
               "name": "${{ github.actor }}",
