@@ -14,16 +14,16 @@ jobs:
     - name: Send a request to webhook
       run: |
         RESPONSE=$(curl -H "Content-Type: application/json" -X POST -d '{
-        "username": "UMP9/Lenna",
+        "username": "GitHub",
         "content": "@everyone",
         "embeds": [
           {
             "type": "rich",
-            "title": "Daily Login Reminder!~",
-            "description": "Hey everyone, UMP9 here! I need to remind you all to login and do your dailys! Make sure you get 80 in the Daily Activity Rewards. Don't forget to complete the Voyage Logs objectives either! And most importantly! COMPLETE YOUR PLATOON DAILY PATROL AND THE GUNSMOKE FRONTLINE MISSIONS!",
+            "title": "New Changes",
+            "description": "New changes on DroneGPS repository by ${{ github.actor }}",
             "color": 2123412,
             "thumbnail": {
-              "url": "https://iopwiki.com/images/b/bf/Lenna_S.png"
+              "url": "https://avatars.githubusercontent.com/u/160980408?v=4"
             },
             "author": {
               "name": "${{ github.actor }}",
