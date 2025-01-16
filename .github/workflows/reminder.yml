@@ -11,7 +11,7 @@ jobs:
     # OS to run our job on
     runs-on: ubuntu-latest
     steps:
-    - name: Send to Discord
+    - name: Send to Discord 1
       run: |
         RESPONSE=$(curl -H "Content-Type: application/json" -X POST -d '{
         "username": "Lenna",
@@ -25,6 +25,17 @@ jobs:
             "thumbnail": {
               "url": "https://iopwiki.com/images/b/bf/Lenna_S.png"
             },
+        ]
+    - name: Send to Discord 2
+      run: |
+        RESPONSE=$(curl -H "Content-Type: application/json" -X POST -d '{
+        "username": "Lenna",
+        "embeds": [
+          {
+            "type": "rich",
+            "title": "Daily Activity Rewards!",
+            "description": "Your Daily Activity Rewards are very important makesure to always get your score to 80!",
+            "color": 2123412,
         ]
         }' ${{ secrets.DISCORD_WEBHOOK }})
         echo "Webhook server response: $RESPONSE"
