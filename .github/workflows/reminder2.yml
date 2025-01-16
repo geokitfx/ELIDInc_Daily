@@ -18,12 +18,12 @@ jobs:
       run: |
         RESPONSE=$(curl -H "Content-Type: application/json" -X POST -d '{
         "username": "Colphne",
-        "content": "TEST",
+        "content": "Don't forget me!",
         "embeds": [
           {
             "type": "rich",
-            "title": "Daily Login Reminder~",
-            "description": "Hello Commander, Lenna here! I need to remind you to login and do your dailys!",
+            "title": "Daily BP Reminder~",
+            "description": "Don't forget to complete your Voyage logs~",
             "color": 2123412,
             "thumbnail": {
               "url": "" 
@@ -34,8 +34,8 @@ jobs:
           },
           {
             "type": "rich",
-            "title": "Daily Activity Rewards!",
-            "description": "Your Daily Activity Rewards are very important makesure to always get your score to 80!",
+            "title": "Daily Platoon Activites!",
+            "description": "COMPLETE YOUR PLATOON DAILY PATROL AND THE GUNSMOKE FRONTLINE MISSIONS!",
             "color": 2123412,
             "thumbnail": {
               "url": ""
