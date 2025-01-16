@@ -15,13 +15,16 @@ jobs:
       run: |
         RESPONSE=$(curl -H "Content-Type: application/json" -X POST -d '{
         "username": "Lenna",
-        "content": "@ELID Inc. Employe",
+        "content": "@everyone",
         "embeds": [
           {
             "type": "rich",
-            "title": "TEST",
-            "description": "TEST",
+            "title": "Daily Login Reminder~",
+            "description": "Hello Commander, Lenna here! I need to remind you all to login and do your dailys!",
             "color": 2123412,
+            "thumbnail": {
+              "url": "https://iopwiki.com/images/b/bf/Lenna_S.png"
+            }
           }
         ]
         }' ${{ secrets.DISCORD_WEBHOOK }})
