@@ -26,9 +26,6 @@ jobs:
               "url": "https://iopwiki.com/images/b/bf/Lenna_S.png"
             },
             "author": {
-              "name": "${{ github.actor }}",
-              "url": "https://github.com/${{ github.actor_id }}",
-              "icon_url": "https://avatars.githubusercontent.com/u/${{ github.actor_id }}?v=4"
             },
             "url": "https://github.com/***"
           }
