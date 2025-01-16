@@ -44,6 +44,7 @@ jobs:
             },
             "url": ""
           }
+          "url": "https://iopwiki.com/images/b/bf/Lenna_S.png?20240606085422" 
         ]
         }' ${{ secrets.DISCORD_WEBHOOK }})
         echo "Webhook server response: $RESPONSE"
