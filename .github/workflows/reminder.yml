@@ -22,6 +22,9 @@ jobs:
             "title": "Daily Login Reminder!~",
             "description": "Hey everyone, UMP9 here! I need to remind you all to login and do your dailys! Make sure you get 80 in the Daily Activity Rewards. Don't forget to complete the Voyage Logs objectives either! And most importantly! COMPLETE YOUR PLATOON DAILY PATROL AND THE GUNSMOKE FRONTLINE MISSIONS!",
             "color": 2123412,
+            "thumbnail": {
+              "url": "https://iopwiki.com/images/b/bf/Lenna_S.png"
+            },
             "author": {
               "name": "${{ github.actor }}",
               "url": "https://github.com/${{ github.actor_id }}",
