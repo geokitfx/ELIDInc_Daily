@@ -28,6 +28,18 @@ jobs:
             "author": {
             },
             "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          },
+          {
+            "type": "rich",
+            "title": "Daily Activity Rewards!",
+            "description": "Your Daily Activity Rewards are very important makesure to always get your score to 80!",
+            "color": 2123412,
+            "thumbnail": {
+              "url": "https://iopwiki.com/images/b/bf/Lenna_S.png"
+            },
+            "author": {
+            },
+            "url": ""
           }
         ]
         }' ${{ secrets.DISCORD_WEBHOOK }})
