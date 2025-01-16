@@ -37,13 +37,6 @@ jobs:
             "title": "Daily Platoon Activites!",
             "description": "COMPLETE YOUR PLATOON DAILY PATROL AND THE GUNSMOKE FRONTLINE MISSIONS!",
             "color": 2123412,
-            "thumbnail": {
-              "url": ""
-            },
-            "author": {
-            },
-            "url": ""
-          }
         ]
         }' ${{ secrets.DISCORD_WEBHOOK2 }})
         echo "Webhook server response: $RESPONSE"
