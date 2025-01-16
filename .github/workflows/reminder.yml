@@ -43,6 +43,18 @@ jobs:
             "author": {
             },
             "url": ""
+          },
+          {
+            "type": "rich",
+            "title": "The Battle Pass.",
+            "description": "Don't forget to complete the Voyage Logs objectives either!",
+            "color": 2123412,
+            "thumbnail": {
+              "url": ""
+            },
+            "author": {
+            },
+            "url": ""
           }
         ]
         }' ${{ secrets.DISCORD_WEBHOOK }})
