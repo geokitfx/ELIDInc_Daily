@@ -43,11 +43,33 @@ jobs:
             "author": {
             },
             "url": ""
-          },
+          }
+        ]
+        }' ${{ secrets.DISCORD_WEBHOOK }})
+        echo "Webhook server response: $RESPONSE"
+        
+    - name: Send to Discord 2
+      run: |
+        RESPONSE=$(curl -H "Content-Type: application/json" -X POST -d '{
+        "username": "Lenna",
+        "content": "@everyone",
+        "embeds": [
           {
             "type": "rich",
             "title": "The Battle Pass.",
             "description": "Don't forget to complete the Voyage Logs objectives either!",
+            "color": 2123412,
+            "thumbnail": {
+              "url": ""
+            },
+            "author": {
+            },
+            "url": ""
+          },
+          {
+            "type": "rich",
+            "title": "And most importantly!",
+            "description": "COMPLETE YOUR PLATOON DAILY PATROL AND THE GUNSMOKE FRONTLINE MISSIONS!",
             "color": 2123412,
             "thumbnail": {
               "url": ""
