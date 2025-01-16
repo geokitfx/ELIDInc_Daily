@@ -1,4 +1,4 @@
-name: Colphne
+name: Lenna
 # Make sure to change what triggers your action based on your needs
 on:
   schedule:
@@ -18,7 +18,7 @@ jobs:
       run: |
         RESPONSE=$(curl -H "Content-Type: application/json" -X POST -d '{
         "username": "Colphne",
-        "content": "",
+        "content": "Don't forget me!",
         "embeds": [
           {
             "type": "rich",
@@ -26,11 +26,11 @@ jobs:
             "description": "Don't forget to complete the Voyage Logs objectives either!",
             "color": 2123412,
             "thumbnail": {
-              "url": ""
+              "url": "" 
             },
             "author": {
             },
-            "url": ""
+            "url": "" 
           },
           {
             "type": "rich",
