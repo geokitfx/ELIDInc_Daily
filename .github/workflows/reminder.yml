@@ -30,7 +30,7 @@ jobs:
             },
             "author": {
             },
-            "url": "" 
+            "url": "https://iopwiki.com/images/b/bf/Lenna_S.png"  
           },
           {
             "type": "rich",
@@ -44,7 +44,6 @@ jobs:
             },
             "url": ""
           }
-          "url": "https://iopwiki.com/images/b/bf/Lenna_S.png" 
         ]
         }' ${{ secrets.DISCORD_WEBHOOK }})
         echo "Webhook server response: $RESPONSE"
