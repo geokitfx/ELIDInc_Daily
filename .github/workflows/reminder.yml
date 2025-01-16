@@ -1,4 +1,4 @@
-name: Reminder
+name: Lenna
 # Make sure to change what triggers your action based on your needs
 on:
   schedule:
