@@ -17,13 +17,13 @@ jobs:
     - name: Send to Discord 1
       run: |
         RESPONSE=$(curl -H "Content-Type: application/json" -X POST -d '{
-        "username": "Colphne",
-        "content": "Don't forget me!",
+        "username": "Lenna",
+        "content": "@everyone",
         "embeds": [
           {
             "type": "rich",
-            "title": "The Battle Pass.",
-            "description": "Don't forget to complete the Voyage Logs objectives either!",
+            "title": "Daily Login Reminder~",
+            "description": "Hello Commander, Lenna here! I need to remind you to login and do your dailys!",
             "color": 2123412,
             "thumbnail": {
               "url": "" 
@@ -34,8 +34,8 @@ jobs:
           },
           {
             "type": "rich",
-            "title": "And most importantly!",
-            "description": "COMPLETE YOUR PLATOON DAILY PATROL AND THE GUNSMOKE FRONTLINE MISSIONS!",
+            "title": "Daily Activity Rewards!",
+            "description": "Your Daily Activity Rewards are very important makesure to always get your score to 80!",
             "color": 2123412,
             "thumbnail": {
               "url": ""
@@ -45,7 +45,7 @@ jobs:
             "url": ""
           }
         ]
-        }' ${{ secrets.DISCORD_WEBHOOK2 }})
+        }' ${{ secrets.DISCORD_WEBHOOK }})
         echo "Webhook server response: $RESPONSE"
   
   workflow-keepalive:
