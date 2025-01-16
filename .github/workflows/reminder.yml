@@ -23,10 +23,6 @@ jobs:
             "description": "Hey Commander, Lenna here! I need to remind you all to login and do your dailys!",
             "color": 2123412,
         ]
-        "author": {
-              "name": "",
-              "url": "https://github.com/${{ github.actor_id }}",
-              "icon_url": "https://avatars.githubusercontent.com/u/${{ github.actor_id }}?v=4"
-            },
+        }
         }' ${{ secrets.DISCORD_WEBHOOK }})
         echo "Webhook server response: $RESPONSE"
