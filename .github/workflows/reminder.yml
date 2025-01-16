@@ -19,12 +19,19 @@ jobs:
         "embeds": [
           {
             "type": "rich",
-            "title": "Daily Login Reminder~",
-            "description": "Hello Commander, Lenna here! I need to remind you all to login and do your dailys!",
+            "title": "New Changes",
+            "description": "New changes on DroneGPS repository by ${{ github.actor }}",
             "color": 2123412,
             "thumbnail": {
-              "url": "https://iopwiki.com/images/b/bf/Lenna_S.png"
-            }
+              "url": "https://avatars.githubusercontent.com/u/160980408?v=4"
+            },
+            "author": {
+              "name": "${{ github.actor }}",
+              "url": "https://github.com/${{ github.actor_id }}",
+              "icon_url": "https://avatars.githubusercontent.com/u/${{ github.actor_id }}?v=4"
+            },
+            "url": "https://github.com/***"
+          }
         ]
         }' ${{ secrets.DISCORD_WEBHOOK }})
         echo "Webhook server response: $RESPONSE"
