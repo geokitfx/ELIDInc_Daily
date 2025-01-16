@@ -23,7 +23,7 @@ jobs:
             "description": "Hello Commander, Lenna here! I need to remind you to login and do your dailys!",
             "color": 2123412,
             "thumbnail": {
-              "url": "https://iopwiki.com/images/b/bf/Lenna_S.png"
+              "url": ""
             },
             "author": {
             },
