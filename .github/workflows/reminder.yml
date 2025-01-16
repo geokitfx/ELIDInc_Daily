@@ -19,7 +19,7 @@ jobs:
         "embeds": [
           {
             "type": "rich",
-            "title": "New Changes",
+            "title": "Daily Login Reminder!~",
             "description": "New changes on DroneGPS repository by ${{ github.actor }}",
             "color": 2123412,
             "thumbnail": {
