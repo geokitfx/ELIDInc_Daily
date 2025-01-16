@@ -22,7 +22,7 @@ jobs:
             "title": "Daily Login Reminder!~",
             "description": "Hey Commander, Lenna here! I need to remind you all to login and do your dailys!",
             "color": 2123412,
-        ]
         }
+        ]
         }' ${{ secrets.DISCORD_WEBHOOK }})
         echo "Webhook server response: $RESPONSE"
