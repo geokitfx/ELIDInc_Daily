@@ -1,0 +1,48 @@
+name: Reminder
+# Make sure to change what triggers your action based on your needs
+on:
+  schedule:
+    - cron: "0 22 * * *" # scheduled at 06:00 (UTC+8) everyday
+  workflow_dispatch:
+  
+jobs:
+  # ID of our job
+  webhook-request:
+    # OS to run our job on
+    runs-on: ubuntu-latest
+    steps:
+    - name: Send to Discord
+      run: |
+        RESPONSE=$(curl -H "Content-Type: application/json" -X POST -d '{
+        "username": "Lenna",
+        "content": "@everyone",
+        "embeds": [
+          {
+            "type": "rich",
+            "title": "Daily Login Reminder~",
+            "description": "Hello Commander, Lenna here! I need to remind you all to login and do your dailys!",
+            "color": 2123412,
+            "thumbnail": {
+              "url": "https://iopwiki.com/images/b/bf/Lenna_S.png"
+            },
+          {
+            "type": "rich",
+            "title": "Daily Activity Rewards!",
+            "description": "Your Daily Activity Rewards are very important makesure to always get your score to 80!",
+            "color": 2123412,
+          },
+        {
+            "type": "rich",
+            "title": "The Battle Pass.",
+            "description": "Don't forget to complete the Voyage Logs objectives either!",
+            "color": 2123412,
+          },
+        {
+            "type": "rich",
+            "title": "And most importantly!",
+            "description": "COMPLETE YOUR PLATOON DAILY PATROL AND THE GUNSMOKE FRONTLINE MISSIONS!",
+            "color": 2123412,
+          }
+        ]
+        }' ${{ secrets.DISCORD_WEBHOOK }})
+        echo "Webhook server response: $RESPONSE"
