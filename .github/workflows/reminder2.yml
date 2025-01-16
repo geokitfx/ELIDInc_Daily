@@ -1,4 +1,4 @@
-name: Lenna
+name: Colphne
 # Make sure to change what triggers your action based on your needs
 on:
   schedule:
