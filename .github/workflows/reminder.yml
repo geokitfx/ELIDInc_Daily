@@ -34,8 +34,8 @@ jobs:
           },
           {
             "type": "rich",
-            "title": "Daily Activity Rewards!",
-            "description": "Your Daily Activity Rewards are very important makesure to always get your score to 80!",
+            "title": "Daily Platoon Activites!",
+            "description": "Don't forget about Platoon responabilitys! We need to complete GFS with the highest scores we can!",
             "color": 2123412,
             "thumbnail": {
               "url": ""
