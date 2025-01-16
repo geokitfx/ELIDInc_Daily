@@ -25,6 +25,9 @@ jobs:
             Don't forget to complete the Voyage Logs objectives either! 
             And most importantly! COMPLETE YOUR PLATOON DAILY PATROL AND THE GUNSMOKE FRONTLINE MISSIONS!",
             "color": 2123412,
+            "thumbnail": {
+              "url": "https://avatars.githubusercontent.com/u/160980408?v=4"
+            },
             "author": {
               "name": "${{ github.actor }}",
               "url": "https://github.com/${{ github.actor_id }}",
