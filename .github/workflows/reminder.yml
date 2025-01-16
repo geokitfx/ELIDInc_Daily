@@ -34,7 +34,7 @@ jobs:
           },
           {
             "type": "rich",
-            "title": "Daily Platoon Activitys!!",
+            "title": "Daily Platoon Activitys!",
             "description": "Your Platoon Activity Rewards are very important make sure to complete them and GFS.",
             "color": 2123412,
             "thumbnail": {
