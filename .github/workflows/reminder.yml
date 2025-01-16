@@ -23,6 +23,18 @@ jobs:
             "description": "Hello Commander, Lenna here! I need to remind you to login and do your dailys!",
             "color": 2123412,
             "thumbnail": {
+              "url": "" # Do not fucking delete Thumbnail, URLS or the author shit, IT WILL FUCK EVERYTHING OVER
+            },
+            "author": {
+            },
+            "url": "" # It's just one of those "It just works" coding shit that trying to improve the codes BREAKS EVERYTHING
+          },
+          {
+            "type": "rich",
+            "title": "Daily Activity Rewards!",
+            "description": "Your Daily Activity Rewards are very important makesure to always get your score to 80!",
+            "color": 2123412,
+            "thumbnail": {
               "url": ""
             },
             "author": {
@@ -31,8 +43,8 @@ jobs:
           },
           {
             "type": "rich",
-            "title": "Daily Activity Rewards!",
-            "description": "Your Daily Activity Rewards are very important makesure to always get your score to 80!",
+            "title": "The Battle Pass.",
+            "description": "Don't forget to complete the Voyage Logs objectives either!",
             "color": 2123412,
             "thumbnail": {
               "url": ""
