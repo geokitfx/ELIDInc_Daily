@@ -23,11 +23,11 @@ jobs:
             "description": "Hello Commander, Lenna here! I need to remind you to login and do your dailys!",
             "color": 2123412,
             "thumbnail": {
-              "url": "https://iopwiki.com/images/b/bf/Lenna_S.png"
+              "url": ""
             },
             "author": {
             },
-            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            "url": ""
           },
           {
             "type": "rich",
@@ -36,6 +36,25 @@ jobs:
             "color": 2123412,
             "thumbnail": {
               "url": "https://iopwiki.com/images/b/bf/Lenna_S.png"
+            },
+            "author": {
+            },
+            "url": ""
+          }
+        ]
+    - name: Send to Discord 2
+      run: |
+        RESPONSE=$(curl -H "Content-Type: application/json" -X POST -d '{
+        "username": "Lenna",
+        "content": "",
+        "embeds": [
+        {
+            "type": "rich",
+            "title": "Daily Activity Rewards!",
+            "description": "Your Daily Activity Rewards are very important makesure to always get your score to 80!",
+            "color": 2123412,
+            "thumbnail": {
+              "url": ""
             },
             "author": {
             },
