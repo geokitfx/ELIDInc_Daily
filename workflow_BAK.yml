@@ -1,9 +1,12 @@
-name: Reminder
+name: Lenna
 # Make sure to change what triggers your action based on your needs
 on:
   schedule:
     - cron: "0 22 * * *" # scheduled at 06:00 (UTC+8) everyday
   workflow_dispatch:
+
+# Do not fucking delete Thumbnail, URLS or the author shit, IT WILL FUCK EVERYTHING OVER
+# It's just one of those "It just works" coding shit that trying to improve the codes BREAKS EVERYTHING
   
 jobs:
   # ID of our job
@@ -11,7 +14,7 @@ jobs:
     # OS to run our job on
     runs-on: ubuntu-latest
     steps:
-    - name: Send to Discord
+    - name: Send to Discord 1
       run: |
         RESPONSE=$(curl -H "Content-Type: application/json" -X POST -d '{
         "username": "Lenna",
@@ -20,29 +23,35 @@ jobs:
           {
             "type": "rich",
             "title": "Daily Login Reminder~",
-            "description": "Hello Commander, Lenna here! I need to remind you all to login and do your dailys!",
+            "description": "Hello Commander, Lenna here! I need to remind you to login and do your dailys!",
             "color": 2123412,
             "thumbnail": {
-              "url": "https://iopwiki.com/images/b/bf/Lenna_S.png"
+              "url": "https://iopwiki.com/images/b/bf/Lenna_S.png" 
             },
+            "author": {
+            },
+            "url": "" 
+          },
           {
             "type": "rich",
-            "title": "Daily Activity Rewards!",
-            "description": "Your Daily Activity Rewards are very important makesure to always get your score to 80!",
+            "title": "Daily Platoon Activitys!",
+            "description": "Your Platoon Activity Rewards are very important make sure to complete them and GFS.",
             "color": 2123412,
-          },
-        {
-            "type": "rich",
-            "title": "The Battle Pass.",
-            "description": "Don't forget to complete the Voyage Logs objectives either!",
-            "color": 2123412,
-          },
-        {
-            "type": "rich",
-            "title": "And most importantly!",
-            "description": "COMPLETE YOUR PLATOON DAILY PATROL AND THE GUNSMOKE FRONTLINE MISSIONS!",
-            "color": 2123412,
+            "thumbnail": {
+              "url": ""
+            },
+            "author": {
+            },
+            "url": ""
           }
         ]
         }' ${{ secrets.DISCORD_WEBHOOK }})
         echo "Webhook server response: $RESPONSE"
+  
+  workflow-keepalive:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - uses: liskin/gh-workflow-keepalive@v1
