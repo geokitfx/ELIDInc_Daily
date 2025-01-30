@@ -33,7 +33,7 @@ jobs:
             "url": "" 
           }
         ]
-        } ${{ secrets.DISCORD_WEBHOOK3 }})
+        }' ${{ secrets.DISCORD_WEBHOOK3 }})
         echo "Webhook server response: $RESPONSE"
   
   workflow-keepalive:
