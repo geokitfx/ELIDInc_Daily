@@ -1,4 +1,4 @@
-name: Groza
+name: Lenna
 # Make sure to change what triggers your action based on your needs
 on:
   schedule:
@@ -18,22 +18,34 @@ jobs:
       run: |
         RESPONSE=$(curl -H "Content-Type: application/json" -X POST -d '{
         "username": "Lenna",
-        "content": "<@&1328772609621495860>",
+        "content": "@everyone",
         "embeds": [
           {
             "type": "rich",
-            "title": "Update to Daily Reminder System",
-            "description": "Hello Commander, We've updated the Dail Reminder system. Now you can opt in by reacting to this post with a Checkmark",
+            "title": "Daily Login Reminder~",
+            "description": "Hello Commander, Lenna here! I need to remind you to login and do your dailys!",
             "color": 2123412,
             "thumbnail": {
-              "url": "",
+              "url": "https://iopwiki.com/images/b/bf/Lenna_S.png" 
             },
             "author": {
             },
-            "url": "",
+            "url": "" 
+          },
+          {
+            "type": "rich",
+            "title": "Daily Platoon Activitys!",
+            "description": "Your Platoon Activity Rewards are very important make sure to complete them and GFS.",
+            "color": 2123412,
+            "thumbnail": {
+              "url": ""
+            },
+            "author": {
+            },
+            "url": ""
           }
         ]
-        }' ${{ secrets.GROZA }})
+        }' ${{ secrets.DISCORD_WEBHOOK }})
         echo "Webhook server response: $RESPONSE"
   
   workflow-keepalive:
